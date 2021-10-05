@@ -1,0 +1,40 @@
+import React from "react";
+import { FaUserSecret,FaHome, FaUserAlt, FaFileCode,FaBlog,FaRegStar,FaEnvelope} from "react-icons/fa";
+export const navlinks=[
+    {
+        id:1,
+        name:"Home",
+        path:"/",
+        icon:<FaHome/>
+    },
+    {
+        id:2,
+        name:"About",
+        path:"/about",
+        icon:<FaUserAlt/>
+    },
+    {
+        id:3,
+        name:"Project",
+        path:"/project",
+        icon:<FaFileCode/>
+    },
+    {
+        id:4,
+        name:"Blog",
+        path:"/blog",
+        icon:<FaBlog/>
+    },
+    {
+        id:5,
+        name:"Testimonial",
+        path:"/testimonial",
+        icon:<FaRegStar/>
+    },
+    {
+        id:6,
+        name:"Contact",
+        path:"/contact",
+        icon:<FaEnvelope/>
+    }
+];
