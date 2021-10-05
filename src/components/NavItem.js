@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUserSecret,FaHome, FaUserAlt, FaFileCode,FaBlog,FaRegStar,FaEnvelope} from "react-icons/fa";
+import {FaHome, FaUserAlt, FaFileCode,FaBlog,FaRegStar,FaEnvelope} from "react-icons/fa";
 export const navlinks=[
     {
         id:1,

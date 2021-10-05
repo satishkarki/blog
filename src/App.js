@@ -8,11 +8,14 @@ import Project from './pages/Project';
 import Testimonial from './pages/Testimonial';
 import Error from './pages/Error';
 import NavBar from './components/NavBar';
+import Brand from './components/Brand';
 
 function App(){
     return(
         <main>
+        
         <BrowserRouter>
+            <Brand/>
             <NavBar/>
             <Switch>
                 <Route exact path="/" component={Home} />

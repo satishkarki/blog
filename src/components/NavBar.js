@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {navlinks} from "./NavItem";
 
-
 function NavBar(){
     const NavMenu=navlinks.map((navlink)=>
     <li key={navlink.id}>
@@ -13,7 +12,9 @@ function NavBar(){
     </li>
     );
     return(
-        <div>{NavMenu}</div>
+        <div>
+            {NavMenu}
+        </div>
     );
 }
 export default NavBar;
