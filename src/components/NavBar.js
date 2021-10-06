@@ -24,7 +24,7 @@ function NavBar(){
         <div className="BrandDiv">
             <Link to="/" className="navlogo">
                 <FaUserNinja/>
-                <span className="logo-name">SATISH KARKI</span>
+                <span className="logo-name">Satish Karki</span>
             </Link>
         </div>
     

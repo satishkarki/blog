@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Poppins&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 .Header{
     height: 8vh;
@@ -15,13 +18,16 @@
     cursor: pointer;
     justify-items: start;
     margin-left: 1rem;
+    align-items: center;
 }
 
 .navlogo{
+   
     text-decoration: none;
     color: whitesmoke;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .navlogo:hover{
     color: lightskyblue;
@@ -29,6 +35,8 @@
 .logo-name{
     margin-left:1rem;
     letter-spacing:2px;
+    font-family: 'Birthstone', cursive ,sans-serif ;
+    font-size: 2rem;
 }
 .nav-items{
     display:flex;
@@ -43,6 +51,7 @@
 }
 
 .nav-items a{
+    font-family: 'Poppins', sans-serif;
     color: whitesmoke;
     text-decoration: none;
     letter-spacing: 2px;
