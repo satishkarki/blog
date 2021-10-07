@@ -2,13 +2,16 @@ import React,{useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import {navlinks} from "./NavItem";
 import "../style/NavBar.css"
-import {FaUserNinja} from "react-icons/fa";
+import {FaUserNinja,FaBars,FaTimes} from "react-icons/fa";
 
 function NavBar(){
     const[mobileView, setmobileView]=useState(false);
+    const[sideBar,setsideBar]=useState(false);
+   
+    
     useEffect(()=>{
         const handleResize=()=>{
-            window.innerWidth<1065?setmobileView(true):setmobileView(false);
+            window.innerWidth<1100?setmobileView(true):setmobileView(false);
         }
         window.addEventListener("resize",handleResize);
         return()=>{
@@ -24,9 +27,6 @@ function NavBar(){
                 <span >{navlink.name}</span>
             </Link>
             </li>
-            
-            
-   
     );
 
     const BrandName=(
@@ -35,17 +35,28 @@ function NavBar(){
                 <FaUserNinja/>
                 <span className="logo-name">Satish Karki</span>
             </Link>
-        </div>
-    
-      
+        </div>   
     );
- 
+  
+    const SideBar=(
+        <div className="sidebar-toggle">
+            {!sideBar?(
+                <FaBars className="sidebar-logo" onClick={()=>setsideBar(!sideBar)}/>
+            ):
+            (<FaTimes className="sidebar-logo" onClick={()=>setsideBar(!sideBar)}/>)}
+
+        </div>
+        
+        
+    );
+
     return(
         <div className="Header">
             {BrandName}
             {!mobileView && <ul className="nav-items">
             {NavMenu}
             </ul>}
+            {mobileView && SideBar}
         </div>
     );
 }
