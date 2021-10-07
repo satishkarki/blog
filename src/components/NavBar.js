@@ -8,10 +8,20 @@ function NavBar(){
     const[mobileView, setmobileView]=useState(false);
     const[sideBar,setsideBar]=useState(false);
    
-    
+    useEffect(()=>{
+        if(window.innerWidth<1100){
+            setmobileView(true);
+        }
+    },[]);
     useEffect(()=>{
         const handleResize=()=>{
-            window.innerWidth<1100?setmobileView(true):setmobileView(false);
+            if(window.innerWidth<1100){
+                setmobileView(true);
+            }
+            else{
+                setmobileView(false);
+                setsideBar(false);
+            }
         }
         window.addEventListener("resize",handleResize);
         return()=>{
@@ -49,15 +59,31 @@ function NavBar(){
         
         
     );
+    const SideBarMenu=navlinks.map((navlink)=>
+        
+    <li className="side-nav-item" key={navlink.id}>
+      <Link to={navlink.path} >
+          {navlink.icon}
+          <span >{navlink.name}</span>
+      </Link>
+      </li>
+);
 
     return(
-        <div className="Header">
-            {BrandName}
-            {!mobileView && <ul className="nav-items">
-            {NavMenu}
-            </ul>}
-            {mobileView && SideBar}
+        <div>
+             <div className="Header">
+                {BrandName}
+                {!mobileView && <div className="nav-items">
+                {NavMenu}
+                </div>}
+                {mobileView && SideBar}
+            </div>
+            <div className={sideBar?"SideDiv active":"SideDiv"}>
+                {SideBarMenu}
+            </div>
         </div>
+       
+        
     );
 }
 export default NavBar;
