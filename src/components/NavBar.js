@@ -1,22 +1,31 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import {navlinks} from "./NavItem";
 import "../style/NavBar.css"
 import {FaUserNinja} from "react-icons/fa";
 
 function NavBar(){
+    const[mobileView, setmobileView]=useState(false);
+    useEffect(()=>{
+        const handleResize=()=>{
+            window.innerWidth<1065?setmobileView(true):setmobileView(false);
+        }
+        window.addEventListener("resize",handleResize);
+        return()=>{
+            window.removeEventListener("resize",handleResize);
+        }
+    },[])
+
     const NavMenu=navlinks.map((navlink)=>
         
-        
-            <li className="nav-item" key={navlink.id}>
+          <li className="nav-item" key={navlink.id}>
             <Link to={navlink.path} >
                 {navlink.icon}
                 <span >{navlink.name}</span>
             </Link>
             </li>
             
-    
-  
+            
    
     );
 
@@ -34,9 +43,9 @@ function NavBar(){
     return(
         <div className="Header">
             {BrandName}
-            <ul className="nav-items">
+            {!mobileView && <ul className="nav-items">
             {NavMenu}
-            </ul>
+            </ul>}
         </div>
     );
 }
