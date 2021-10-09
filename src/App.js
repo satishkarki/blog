@@ -8,7 +8,7 @@ import Project from './pages/Project';
 import Testimonial from './pages/Testimonial';
 import Error from './pages/Error';
 import NavBar from './components/NavBar';
-// import Brand from './components/Brand';
+import './style/page.css'
 
 function App(){
     return(
