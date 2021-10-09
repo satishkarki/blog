@@ -25,8 +25,9 @@ function App(){
                 <Route path="/testimonial" component={Testimonial}/>
                 <Route path="/contact" component={Contact}/>
                 <Route  component={Error}/>
-            </Switch>
-        </BrowserRouter>    
+            </Switch> 
+        </BrowserRouter> 
+        
         </main>
     )
 }
