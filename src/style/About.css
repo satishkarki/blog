@@ -1,0 +1,41 @@
+:root{
+    --black: #000000;
+    --black2: #1b1919;
+    --blue:#091353;
+    --white: whitesmoke;
+    --green:#346751;
+}
+
+
+
+.about{
+    height: 92vh;
+    min-height: 92vh;
+    width: 100%;
+    padding:20px 20px;
+    justify-content: center;
+}
+.about .title{
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+.about .title h2{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    
+}
+.about .title h2::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 50px;
+    height: 4px;
+    background: var(--black);
+}

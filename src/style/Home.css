@@ -12,6 +12,7 @@ section{
     min-height: 92vh;
 }
 .banner{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,14 +86,13 @@ p{
     text-decoration: none;
     border-radius: 10px;
     cursor: pointer;
-    /* z-index: -1; */
+    
 }
 .btn:hover{
     background: var(--green)
 }
 
 .socialMedia{
-    /* position: absolute; */
     bottom: 20px;
     display: flex;
     margin-top: 2rem;
