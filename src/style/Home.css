@@ -9,9 +9,11 @@
 
 
 section{
+    position: relative;
     height: 92vh;
     min-height: 92vh;
     background-color: var(--black3);
+    overflow: scroll;
 }
 .banner{
     width: 100%;
