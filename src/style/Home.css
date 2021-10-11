@@ -92,7 +92,8 @@ p{
     
 }
 .btn:hover{
-    background: var(--green)
+    background: var(--light);
+    color:var(--black)
 }
 
 .socialMedia{
@@ -122,6 +123,6 @@ p{
 }
 
 .socialMedia li a:hover{
-    background: var(--white);
+    background: var(--light);
     color:var(--black);
 }

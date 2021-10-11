@@ -1,58 +1,30 @@
-import React from "react";
-import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
-import 'react-vertical-timeline-component/style.min.css';
-
+import React, {useState} from "react";
 import "../style/About.css"
-import {EducationLinks} from "../components/TimelineElements"
-import {FaUserGraduate, FaTools,FaWarehouse,} from "react-icons/fa";
+import {Education, Experience, Skills} from "../components/AboutCards"
+// import {Skills} from "../components/AboutCards"
+import ThreeCards from "../components/CardButton";
 
 function About() {
-
-
-  function Education(){
-    let darkbackground={background:"#1b1919", color: "whitesmoke"}
-    return(
-      <div>
-        <VerticalTimeline>
-          {
-            EducationLinks.map(educationlink=>{
-              return(
-               <VerticalTimelineElement
-                key={educationlink.id}
-                date={educationlink.year}
-                dateClassName="date"
-                iconStyle={darkbackground}
-                icon={<FaUserGraduate/>}
-                >
-                <h4 className="vertical-timeline-element-title">{educationlink.program}</h4>
-                <h5 className="vertical-timeline-element-subtitle">{educationlink.collegeIcon} {educationlink.college}</h5>
-                <h6 className="vertical-timeline-element-subtitle">{educationlink.locationIcon} {educationlink.location}</h6>
-
-                </VerticalTimelineElement>
-
-              
-             
-               
-            )     
-          })
-        }
-      </VerticalTimeline>
-    </div>
-  );
-  }
-
-
-  
- 
-  
+  const [activeCard, setactiveCard]=useState("SecondCard")
 
   return (
    <section className="about">
     <div class="title">
       <h2>About Me</h2>
     </div>
-    <h1 className="heading">Education</h1>
-    <Education/>
+    <nav>
+            <button onClick={()=>setactiveCard("FirstCard")}>Education</button>
+            <button onClick={()=>setactiveCard("SecondCard")}>Skills</button> 
+            <button onClick={()=>setactiveCard("ThirdCard")}>Experience</button>
+       
+    </nav>
+    <div> 
+      {activeCard === "FirstCard" && <ThreeCards title={<Education/>}  />}
+      {activeCard === "SecondCard" && <ThreeCards title={<Skills/>}/>}
+      {activeCard === "ThirdCard" && <ThreeCards title={<Experience/>}/>}
+
+    </div>
+   
    </section>
   );
 }

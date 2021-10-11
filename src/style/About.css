@@ -42,7 +42,7 @@
     height: 4px;
     background: var(--white);
 }
-.about .heading{
+/* .about .heading{
     color:var(--white);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -53,7 +53,7 @@
     align-content: center;
     text-align: center;
     margin-top: 4rem;
-}
+} */
 .vertical-timeline-element-content{
     background-color: var(--white);
     color: var(--black);
