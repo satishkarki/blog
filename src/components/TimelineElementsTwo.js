@@ -10,19 +10,19 @@ export const SkillLinks=[
         skills:[
             {
                 skillid:1,
-                skillname:"PYTHON",
+                skillname:"Python",
                 // skillname:"PYTHON-Numpy, SciPy, Pandas, SciKit-Learn, Matplotlib",
                 skillicon:<Fa.FaPython/>
             },
             {
                 skillid:2,
-                skillname:"REACT",
+                skillname:"React",
                 // skillname:"REACT-JSX, Router, Components, Props",
                 skillicon:<Fa.FaReact/>
             },
             {
                 skillid:3,
-                skillname:"JAVASCRIPT",
+                skillname:"JavaScript",
                 // skillname:"JAVASCRIPT-ES6, DOM Manipulation",
                 skillicon:<DiJsBadge/>
             },
@@ -52,13 +52,13 @@ export const SkillLinks=[
         skills:[
             {
                 skillid:1,
-                skillname:"GIT",
+                skillname:"git",
                 // skillname:"GIT- WorkFlow, Branching & Merging",
                 skillicon:<Fa.FaGit/>
             },
             {
                 skillid:2,
-                skillname:"SHELL SCRIPTING",
+                skillname:"Shell Scripting",
                 // skillname:"COMMAND LINE-Piping and Redirection, Shell-scripting",
                 skillicon:<VscTerminalPowershell/>
             },
@@ -95,7 +95,7 @@ export const SkillLinks=[
             },
             {
                 skillid:3,
-                skillname:"Tableau-Data Visualization",
+                skillname:"Tableau-Visualization",
                 // skillname:"Tableau-Data Filtering, Outliers, Visualization",
                 skillicon:<SiTableau/>
             }

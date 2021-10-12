@@ -1,9 +1,12 @@
 import React, {useState} from "react";
 import "../style/About.css"
 import {Education, Experience, Skills} from "../components/AboutCards"
-// import {Skills} from "../components/AboutCards"
 import ThreeCards from "../components/CardButton";
+import {
+  AwesomeButton,
 
+} from 'react-awesome-button';
+import 'react-awesome-button/dist/themes/theme-blue.css';
 function About() {
   const [activeCard, setactiveCard]=useState("SecondCard")
 
@@ -12,11 +15,13 @@ function About() {
     <div class="title">
       <h2>About Me</h2>
     </div>
-    <nav>
-            <button onClick={()=>setactiveCard("FirstCard")}>Education</button>
-            <button onClick={()=>setactiveCard("SecondCard")}>Skills</button> 
-            <button onClick={()=>setactiveCard("ThirdCard")}>Experience</button>
-       
+    <nav className="CardNav">
+          
+            <AwesomeButton className="CardButton" type="primary" onPress={()=>setactiveCard("FirstCard")}>Education</AwesomeButton>
+            <AwesomeButton className="CardButton" type="primary" onPress={()=>setactiveCard("SecondCard")}>Skills</AwesomeButton>
+            <AwesomeButton className="CardButton" type="primary" onPress={()=>setactiveCard("ThirdCard")}>Experience</AwesomeButton>
+            
+        
     </nav>
     <div> 
       {activeCard === "FirstCard" && <ThreeCards title={<Education/>}  />}

@@ -26,7 +26,7 @@ function Home() {
     <section className="banner" id="banner">
        
       <div className="content">
-       <ScrollInfo/>
+        <ScrollInfo/> 
         <div className="imgBx">
           <img src={profile} alt="My Online Portfolio"/>
         </div>

@@ -23,9 +23,9 @@ import * as Fa from "react-icons/fa";
                 iconStyle={darkbackground}
                 icon={<Fa.FaUserGraduate/>}
                 >
-                <h4 className="vertical-timeline-element-title">{educationlink.program}</h4>
-                <h5 className="vertical-timeline-element-subtitle">{educationlink.collegeIcon} {educationlink.college}</h5>
-                <h6 className="vertical-timeline-element-subtitle">{educationlink.locationIcon} {educationlink.location}</h6>
+                <h1 className="eduProgram vertical-timeline-element-title">{educationlink.program}</h1>
+                <h1 className="eduCollege vertical-timeline-element-subtitle">{educationlink.collegeIcon} {educationlink.college}</h1>
+                <h6 className="eduLocation vertical-timeline-element-subtitle">{educationlink.locationIcon} {educationlink.location}</h6>
 
                 </VerticalTimelineElement>
 
@@ -58,10 +58,8 @@ import * as Fa from "react-icons/fa";
                 icon={<Fa.FaTools/>}
                 >
                 
-                <h4 className="vertical-timeline-element-title">{skillLink.skills.map((sub)=> <li>{sub.skillicon} {sub.skillname}</li>)}</h4>
-                {/* <h5 className="vertical-timeline-element-subtitle">{educationlink.collegeIcon} {educationlink.college}</h5>
-                <h6 className="vertical-timeline-element-subtitle">{educationlink.locationIcon} {educationlink.location}</h6> */}
-
+                <h4 className="vertical-timeline-element-title">{skillLink.skills.map((sub)=> <li className="SkillList">{sub.skillicon} {sub.skillname}</li>)}</h4>
+                
                 </VerticalTimelineElement>
 
               
@@ -90,12 +88,12 @@ import * as Fa from "react-icons/fa";
                 iconStyle={darkbackground}
                 icon={<Fa.FaUserTie/>}
                 >
-                <h4 className="vertical-timeline-element-title">{experiencelink.Office}</h4>
-                <h5 className="vertical-timeline-element-subtitle">{experiencelink.Position} </h5>
-                <h6 className="vertical-timeline-element-subtitle">{experiencelink.Duty1}</h6>
-                <h6 className="vertical-timeline-element-subtitle">{experiencelink.Duty2}</h6>
-                <h6 className="vertical-timeline-element-subtitle">{experiencelink.Duty3}</h6>
-                <h6 className="vertical-timeline-element-subtitle">{experiencelink.locationIcon} {experiencelink.location}</h6>
+                <h1 className="ExpPosition vertical-timeline-element-subtitle">{experiencelink.Position} </h1>
+                <h1 className=" ExpOffice vertical-timeline-element-title">{experiencelink.Office}</h1>
+                <li className="ExpDuty vertical-timeline-element-subtitle">{experiencelink.Duty1}</li>
+                <li className="ExpDuty vertical-timeline-element-subtitle">{experiencelink.Duty2}</li>
+                <li className="ExpDuty vertical-timeline-element-subtitle">{experiencelink.Duty3}</li>
+                <h6 className="ExpLocation vertical-timeline-element-subtitle">{experiencelink.locationIcon} {experiencelink.location}</h6>
 
                 </VerticalTimelineElement>
 

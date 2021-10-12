@@ -11,7 +11,7 @@ export const ExperienceLinks=[
         Duty3:"Worked in close cooperation with Project Managers in an Agile environment ",
         location:"Barrie, ON, Canada",
         locationIcon:<Fa.FaMapMarkerAlt/>,
-        year:"May-August 2021",
+        year:"April-August 2021",
         yearIcon:<Fa.FaRegCalendarAlt/>
 
       
