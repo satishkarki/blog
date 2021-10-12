@@ -13,7 +13,7 @@ import './style/page.css'
 function App(){
     return(
         <main>
-        
+         
         <BrowserRouter>
             
             <NavBar/>
@@ -32,3 +32,4 @@ function App(){
     )
 }
 export default App;
+
