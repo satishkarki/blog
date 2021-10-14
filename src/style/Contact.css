@@ -1,0 +1,209 @@
+:root{
+  --black: #000000;
+  --black2: #1b1919;
+  --black4: #323232;
+  --black3: #2B2B2B;
+  --blue:#091353;
+  --white: whitesmoke;
+  --green:#346751;
+  --light:#F9CF93;
+  --darklight:#c17d11;
+}
+.contact{
+  background-color: var(--black3);
+  color:var(--white);
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  padding:20px 20px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.contact .title{
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+.contact .title h2{
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  font-weight: bold;
+  
+}
+.contact .title h2::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 50px;
+  height: 4px;
+  background: var(--white);
+}
+.formstyle{
+  background-color: var(--black4);
+    border: 3px solid #fff;
+    padding: 20px;
+    height:60vh;
+    width: 80%;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 45px;
+}
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    height:100%;
+    text-align: center;
+
+} 
+.float-child h2{
+  padding:50px,10px;
+  letter-spacing: 5px ;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--darklight);
+  
+}
+.float-child p{
+    padding:50px,10px;
+    letter-spacing: 5px ;
+    
+    
+}
+.float-child .contactadd{
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  align-content: center;
+  
+  
+}
+.float-child .contactadd {
+ 
+
+  align-items: center;
+  
+  
+}
+.contactmedia{
+  margin:4rem;
+  justify-content: center;
+}
+.Form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    flex-direction: column;
+    justify-items: center;
+   
+}
+.Form .input{
+  height: 2rem;
+  font-size: 1rem;
+  padding:20px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+}
+.Form p{
+  color: var(--darklight);
+  font-size: 1rem;
+}
+.Form .messagebox{
+  height:8rem;
+  
+}
+.submitbutton{
+  position: relative; 
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--black2);
+  color: whitesmoke;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+.submitbutton:hover{
+  background: var(--light);
+  color:var(--black);
+}
+  
+ /* /**************Responsive***************  */
+ @media screen and (max-width:1185px){
+  
+  .float-child .contactadd{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    align-content: center;
+    
+    
+  } 
+  .contactmedia{
+    margin:2rem;
+    justify-content: center;
+  }
+  
+}
+@media screen and (max-width:1165px){
+  .formstyle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    padding: 10px;
+    height:150%;
+    width: 95%;
+    margin-top: 10vh;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 45px;
+    
+}
+.float-child {
+    
+
+    width: 100%;
+    padding:5px;
+    height:100%;
+    
+} 
+.float-child h2{
+  padding:0;
+  letter-spacing: 2px ;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid var(--darklight);
+}
+.float-child .contactadd{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  align-content: center;
+  letter-spacing: 0 ;
+  
+}
+.contactmedia{
+  margin:1rem;
+  justify-content: center;
+}
+.Form .input{
+  height: 2rem;
+  width:14rem;
+  font-size: 1rem;
+  padding:20px;
+  margin-bottom: 10px;
+}
+.Form .messagebox{
+  height:8rem;
+}
+}

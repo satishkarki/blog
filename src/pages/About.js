@@ -12,7 +12,7 @@ function About() {
 
   return (
    <section className="about">
-    <div class="title">
+    <div className="title">
       <h2>About Me</h2>
     </div>
     <nav className="CardNav">
