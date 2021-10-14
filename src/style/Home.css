@@ -5,6 +5,7 @@
     --light:#F9CF93;
     --white: whitesmoke;
     --green:#346751;
+    --darklight:#c17d11;
 }
 
 
@@ -28,7 +29,7 @@ section{
    
 }
 .banner .content .Tag-line .typed-word{
-    color:var(--light);
+    color:var(--darklight);
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -92,7 +93,7 @@ p{
     
 }
 .btn:hover{
-    background: var(--light);
+    background: var(--darklight);
     color:var(--black);
 }
 
@@ -123,6 +124,6 @@ p{
 }
 
 .socialMedia li a:hover{
-    background: var(--light);
+    background: var(--darklight);
     color:var(--black);
 }
