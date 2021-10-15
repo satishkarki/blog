@@ -9,37 +9,37 @@ export const SkillLinks=[
         skillType:'Programming Languages',
         skills:[
             {
-                skillid:1,
+                skillid:4,
                 skillname:"Python",
                 // skillname:"PYTHON-Numpy, SciPy, Pandas, SciKit-Learn, Matplotlib",
                 skillicon:<Fa.FaPython/>
             },
             {
-                skillid:2,
+                skillid:5,
                 skillname:"React",
                 // skillname:"REACT-JSX, Router, Components, Props",
                 skillicon:<Fa.FaReact/>
             },
             {
-                skillid:3,
+                skillid:6,
                 skillname:"JavaScript",
                 // skillname:"JAVASCRIPT-ES6, DOM Manipulation",
                 skillicon:<DiJsBadge/>
             },
             {
-                skillid:4,
+                skillid:7,
                 skillname:"Jekyll",
                 skillicon:<SiJekyll/>
 
             },
             {
-                skillid:5,
+                skillid:8,
                 skillname:"HTML5",
                 skillicon:<Fa.FaHtml5/>
 
             },
             {
-                skillid:6,
+                skillid:9,
                 skillname:"CSS3",
                 skillicon:<Fa.FaCss3Alt/>
 
@@ -51,25 +51,25 @@ export const SkillLinks=[
         skillType:'Tools',
         skills:[
             {
-                skillid:1,
+                skillid:10,
                 skillname:"git",
                 // skillname:"GIT- WorkFlow, Branching & Merging",
                 skillicon:<Fa.FaGit/>
             },
             {
-                skillid:2,
+                skillid:11,
                 skillname:"Shell Scripting",
                 // skillname:"COMMAND LINE-Piping and Redirection, Shell-scripting",
                 skillicon:<VscTerminalPowershell/>
             },
             {
-                skillid:3,
+                skillid:12,
                 skillname:"VMware",
                 // skillname:"Vmware-RDP, VPN, AD DS, AWS Cloud Foundation",
                 skillicon:<SiVmware/>
             },
             {
-                skillid:4,
+                skillid:13,
                 skillname:"Office365",
                 // skillname:"Office365:Word, Excel, PowerPoint, SharePoint, Outlook, Teams",
                 skillicon:<SiMicrosoftoffice/>
@@ -82,19 +82,19 @@ export const SkillLinks=[
         skillType:'Database',
         skills:[
             {
-                skillid:1,
+                skillid:14,
                 skillname:"MongoDB",
                 // skillname:"MongoDB- Atlas, Robo 3T",
                 skillicon:<SiMongodb/>
             },
             {
-                skillid:2,
+                skillid:15,
                 skillname:"SQL",
                 // skillname:"SQL-Basic CRUD, JOINS",
                 skillicon:<Fa.FaDatabase/>
             },
             {
-                skillid:3,
+                skillid:16,
                 skillname:"Tableau-Visualization",
                 // skillname:"Tableau-Data Filtering, Outliers, Visualization",
                 skillicon:<SiTableau/>

@@ -2,7 +2,7 @@ import React from "react";
 import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css';
 
-import "../style/About.css"
+import "../style/HomeAbout.css"
 import {EducationLinks} from "./TimelineElements";
 import  {SkillLinks} from "./TimelineElementsTwo";
 import  {ExperienceLinks} from "./TimelineElementsThree";
@@ -58,7 +58,7 @@ import * as Fa from "react-icons/fa";
                 icon={<Fa.FaTools/>}
                 >
                 
-                <h4 className="vertical-timeline-element-title">{skillLink.skills.map((sub)=> <li className="SkillList">{sub.skillicon} {sub.skillname}</li>)}</h4>
+                <h4 className="vertical-timeline-element-title">{skillLink.skills.map((sub)=> <li key={sub.skillid}className="SkillList" > {sub.skillicon} {sub.skillname}</li>)}</h4>
                 
                 </VerticalTimelineElement>
 

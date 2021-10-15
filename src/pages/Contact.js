@@ -4,6 +4,7 @@ import "../style/Contact.css"
 import * as Fa from "react-icons/fa";
 import {sociallinks} from "../components/socialmedia";
 import { Link } from "react-router-dom";
+import Footer  from "../components/Footer";
 
 function Contact() {
   const SocialLink=sociallinks.map((sociallink)=>
@@ -25,15 +26,16 @@ function Contact() {
          <p>Let's talk about your project or your feedback. Let's make something awesome together.</p>
          <p className="contactadd"><Fa.FaMapMarkerAlt/> Mississauga, ON, Canada </p>
          <p className="contactadd"><Fa.FaEnvelope/> karking.satish@gmail.com</p>
-         <ul className=" contactmedia socialMedia">
-          {SocialLink}
-        </ul>
+          <ul className=" contactmedia socialMedia">
+            {SocialLink}
+          </ul>
        </div>
       <div className="float-child">
         <h2>Email Me</h2>
         <FormSignup/>
       </div>
     </div>
+    <Footer/>
     </section>
  
   );

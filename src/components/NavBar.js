@@ -2,7 +2,7 @@ import React,{useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import {navlinks} from "./NavItem";
 import "../style/NavBar.css"
-import {FaUserNinja,FaBars,FaTimes} from "react-icons/fa";
+import {FaBars,FaTimes} from "react-icons/fa";
 
 function NavBar(){
     const[mobileView, setmobileView]=useState(false);
@@ -42,7 +42,7 @@ function NavBar(){
     const BrandName=(
         <div className="BrandDiv">
             <Link to="/" className="navlogo">
-                <FaUserNinja/>
+                {/* <FaUserNinja/> */}
                 <span className="logo-name">Satish Karki</span>
             </Link>
         </div>   

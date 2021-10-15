@@ -94,13 +94,13 @@
     color: var(--white);
    
 }
-@media screen and (max-width:1169px){
-    .date{
-    
-        color: var(--black);
-       
+    @media screen and (max-width:1169px){
+        .date{
+        
+            color: var(--black);
+        
+        }
     }
-}
 
 
 /********************* Skill Card****************************/

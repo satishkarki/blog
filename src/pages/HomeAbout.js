@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "../style/About.css"
+import "../style/HomeAbout.css"
 import {Education, Experience, Skills} from "../components/AboutCards"
 import ThreeCards from "../components/CardButton";
 import {
@@ -7,7 +7,7 @@ import {
 
 } from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-blue.css';
-function About() {
+function HomeAbout() {
   const [activeCard, setactiveCard]=useState("SecondCard")
 
   return (
@@ -34,4 +34,4 @@ function About() {
   );
 }
 
-export default About;
+export default HomeAbout;

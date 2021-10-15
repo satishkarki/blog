@@ -1,7 +1,7 @@
 
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
-import "../style/Home.css"
+import "../style/HomeIntro.css"
 
 function ScrollInfo() {
   // Create Ref element.

@@ -11,15 +11,19 @@
     background: #1b1919;
     display: flex;
     justify-content: space-around;
+    
     align-items: center;
     font-weight: bold;
+  
 }
 .BrandDiv{
     cursor: pointer;
     justify-items: start;
     margin-left: 1rem;
     align-items: center;
+   
 }
+
 @media(max-width:600px){
     .BrandDiv{
         cursor: pointer;
@@ -49,16 +53,16 @@
     font-size: 2rem;
 }
 .nav-items{
-    
     display:flex;
     justify-content: space-between;
     width: 60%;
     height:60%;
+    float: right;
 }
 .nav-items li{
     list-style: none;
     display: flex;
-    
+   
 
     
     
@@ -125,6 +129,7 @@
 .SideDiv.active{
     left:0;
     transition: 0.8s all ease-out ;
+    height:100%;
 }
 .side-nav-item{
     list-style: none;

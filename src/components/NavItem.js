@@ -1,38 +1,21 @@
 import React from "react";
-import {FaHome, FaUserAlt, FaFileCode,FaBlog,FaRegStar,FaEnvelope} from "react-icons/fa";
+import {FaBlog,FaEnvelope,FaUserAlt} from "react-icons/fa";
 export const navlinks=[
     {
         id:1,
-        name:"Home",
+        name:"Portfolio",
         path:"/",
-        icon:<FaHome/>
-    },
-    {
-        id:2,
-        name:"About",
-        path:"/about",
         icon:<FaUserAlt/>
     },
     {
-        id:3,
-        name:"Project",
-        path:"/project",
-        icon:<FaFileCode/>
-    },
-    {
-        id:4,
+        id:2,
         name:"Blog",
         path:"/blog",
         icon:<FaBlog/>
     },
+ 
     {
-        id:5,
-        name:"Testimonial",
-        path:"/testimonial",
-        icon:<FaRegStar/>
-    },
-    {
-        id:6,
+        id:3,
         name:"Contact",
         path:"/contact",
         icon:<FaEnvelope/>
