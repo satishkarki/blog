@@ -7,6 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 .Header{
+    /* position: relative; */
+    position: relative;
     height: 8vh;
     background: #1b1919;
     display: flex;
@@ -17,6 +19,9 @@
   
 }
 .BrandDiv{
+    /* position: absolute; */
+    position: absolute;
+    left:20px;
     cursor: pointer;
     justify-items: start;
     margin-left: 1rem;
@@ -53,11 +58,22 @@
     font-size: 2rem;
 }
 .nav-items{
-    display:flex;
+    /* display:flex;
     justify-content: space-between;
     width: 60%;
     height:60%;
-    float: right;
+    float: right; */
+    display: flex;
+    position: absolute;
+    right: 20px;
+    justify-content:space-between   ;
+    width: 30%;
+    height:60%;
+    /* display:flex;
+    justify-content: space-between;
+    width: 60%;
+    height:60%;
+    float: right; */
 }
 .nav-items li{
     list-style: none;

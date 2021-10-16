@@ -10,8 +10,9 @@
     --darklight:#c17d11;
   }
 .footerSection{
+  position: absolute;
   background-color: var(--black4);
-  margin-top: 10vh;
+  margin-top: 5vh;
   vertical-align: middle;
   text-align: center;
   width: 100%;

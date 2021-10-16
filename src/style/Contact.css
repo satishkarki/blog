@@ -10,12 +10,13 @@
   --darklight:#c17d11;
 }
 .contact{
+ 
   background-color: var(--black3);
   color:var(--white);
-  height: 100vh;
+  height: 100%;
   min-height: 100vh;
   width: 100%;
-  padding:20px 20px;
+  /* padding:20px 20px; */
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -24,6 +25,8 @@
   justify-content: center;
   justify-items: center;
   text-align: center;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
 }
 .contact .title h2{
   position: relative;
@@ -131,6 +134,7 @@
   border-radius: 10px;
   cursor: pointer;
   
+  
 }
 .submitbutton:hover{
   background: var(--darklight);
@@ -170,13 +174,23 @@
     border: 2px solid #fff;
     padding: 10px;
     height:100%;
-    width: 100%;
+    width: 90%;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 20px;
+    margin-right: 5px;
+    /* margin:10px; */
     border-radius: 45px;
     
+    /* background-color: var(--black4);
+    border: 3px solid #fff;
+    padding: 20px;
+    height:60vh;
+    width: 80%;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 45px; */
 }
  
 .float-child {
