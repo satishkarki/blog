@@ -1,6 +1,6 @@
 const path =require("path")
 const fs=require("fs")
-const { type } = require("os")
+// const { type } = require("os")
 
 const dirPath=path.join(__dirname, "../src/markdown")
 let postlist=[]
@@ -55,12 +55,18 @@ const getPosts=async()=>{
                     content:content ? content : "No Content Given"
                 }
                 postlist.push(post)
+                if (i===files.length-1){
+                    let data=JSON.stringify(postlist)
+                    fs.writeFileSync("src/MarkdownJson/posts.json",data)
+                }
+                // console.log(postlist) 
             })
 
         })
     })
-    setTimeout(()=>{
-        console.log(postlist)
-    }, 500)
+    // setTimeout(()=>{
+    //     console.log(postlist)
+    // }, 500)
+    return
 }
 getPosts()
