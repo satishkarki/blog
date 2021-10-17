@@ -1,9 +1,8 @@
 import React from "react";
-
 function Blog() {
   return (
-    <div>
-      <h1 className="Blog">Blog</h1>
+    <div className="BlogPost">
+      <h1>Blog</h1>
     </div>
   );
 }
