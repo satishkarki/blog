@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import Error from './pages/Error';
 import NavBar from './components/NavBar';
 import './style/page.css'
+import SinglePost from './components/SinglePost';
 
 function App(){
     return(
@@ -18,6 +19,7 @@ function App(){
                 <Route exact path="/" component={Home} />
                 <Route path="/blog" component={Blog}/>
                 <Route path="/contact" component={Contact}/>
+                <Route exact path="/post/:id" render={props=><SinglePost {...props}/>}/>
                 <Route  component={Error}/>
             </Switch> 
         </BrowserRouter> 

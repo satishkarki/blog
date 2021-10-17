@@ -1,5 +1,6 @@
 const path =require("path")
 const fs=require("fs")
+const { time } = require("console")
 // const { type } = require("os")
 
 const dirPath=path.join(__dirname, "../src/markdown")
@@ -47,8 +48,11 @@ const getPosts=async()=>{
                 // console.log(metadataIndices)
                 const metadata=parseMetadata({lines, metadataIndices})
                 const content=parseContent({lines, metadataIndices})
+                const date=new Date(metadata.date)
+                const timestamp=date.getTime()/1000
+                // console.log(timestamp)
                 post={
-                    id:i+1,
+                    id:timestamp,
                     title:metadata.title ? metadata.title : "No Title Given",
                     author:metadata.author ? metadata.author : "No Author Given",
                     date:metadata.date ? metadata.date : "No Date Given",
@@ -56,7 +60,10 @@ const getPosts=async()=>{
                 }
                 postlist.push(post)
                 if (i===files.length-1){
-                    let data=JSON.stringify(postlist)
+                    const sortedList=postlist.sort((a,b)=>{
+                        return a.id<b.id? 1:-1
+                    })
+                    let data=JSON.stringify(sortedList)
                     fs.writeFileSync("src/MarkdownJson/posts.json",data)
                 }
                 // console.log(postlist) 
