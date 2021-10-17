@@ -1,7 +1,7 @@
 ---
 title: Git to Know
 author: Satish Karki
-date: October 16, 2021
+date: October 1, 2021
 ---
 # **Git to Know**
 
@@ -17,7 +17,7 @@ date: October 16, 2021
 
 - Repository: a collection of source code
 
-  
+
 
 ![Gitworkflow](Gitworkflow.png)
 
