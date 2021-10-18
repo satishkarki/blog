@@ -2,20 +2,10 @@
 title: Git to Know
 author: Satish Karki
 date: October 1, 2021
+tags: Git
 ---
-# **Git to Know**
-
--  Version Control System
-
-- Distributed VCS
-
-- Every user clones a copy of a repository
-
-- This clone has all of the metadata of the original while the original itself is stored on a self-hosted server or github
-
-- It also synchronise code between multiple people working on the same project
-
-- Repository: a collection of source code
+A programmer's must have tool but its use is not confined to coding only. Imagine changing the `config` file of an application and you messed it up completely. Worry no more, you can revert to the original configuration, with one liner if you know how git works.
+Git is the most commonly used version control system. It is a distributed VCS, complete codebase including its full version history is mirrored on every developer's computer. This feature helps to synchronise code between multiple people working on the same project.
 
 
 

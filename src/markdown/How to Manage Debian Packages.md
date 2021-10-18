@@ -2,12 +2,9 @@
 title: How to manage Debian Packages
 author: Satish Karki
 date: October 15, 2021
+tags: Linux
 ---
-# How to manage Debian Packages
-
-------
-
-> **So, why go through the trouble of downloading in the terminal? Well, next time you will have the superpower to download anything, the cool way.**
+If you spend most of your time in a shell then you will probably use commands like `wget`, `dpkg` and `apt` frequently to install different packages. Everything is in the `man` page but I sometime find it very difficult to read the manpage page to be honest. So, I have listed some of  commonly used syntax in this post.  
 
 ### **wget**
 

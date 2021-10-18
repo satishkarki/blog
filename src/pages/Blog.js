@@ -1,5 +1,6 @@
 import React from "react";
 import BlogList from "../components/BlogList";
+import Footer from "../components/Footer";
 import "../style/Blog.css"
 function Blog() {
   return (
@@ -8,6 +9,7 @@ function Blog() {
         <h2>All Post</h2>
       </div>
       <BlogList/>
+      <Footer/>
     </section>
   );
 }

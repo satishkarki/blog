@@ -7,6 +7,8 @@
     --green:#346751;
     --light:#F9CF93;
     --darklight:#c17d11;
+    --black4: #323232;
+    --shadow:#888888
 }
 .BlogPost{
     color:var(--white);
@@ -15,7 +17,7 @@
     height: 100%;
     min-height: 100vh;
     width: 100%;
-    padding:20px 20px;
+    /* padding:20px 20px; */
     justify-content: center;
 }
 .BlogPost .BlogTopTitle{
@@ -23,6 +25,7 @@
     justify-content: center;
     justify-items: center;
     text-align: center;
+    margin-top: 5vh;
 }
 .BlogPost .BlogTopTitle h2{
     position: relative;
@@ -44,16 +47,90 @@
     background: var(--white);
 }
 .ListofAllPost{
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 5vh;
+    padding:20px;
+    margin-bottom: 5vh;
+    
 }
 .post-card{
+    background: var(--black4);
+    position: relative;
     border-radius:25px;
     border: 1px solid #fff;
     margin-bottom: 25px;
-    text-align: center;
+    text-align: left;
     padding:20px;
+    width: 60%;
+    justify-content: center;
+    justify-items: center;
+    transition: 0.3s;
   
 }
+.post-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 5px var(--shadow);
+}
+.post-card .post-title {
+    font-size: 1.5rem;
+    
+}
+.post-card .post-title a{
+    color: var(--darklight);
+    text-decoration: none;
+    
+}
+.post-card .post-author {
+    color: var(--white);
+    font-size: 0.8rem;
+    opacity: 0.7;
+    
+}
+.post-card .post-date {
+    color: var(--white);
+    font-size: 0.8rem;
+    opacity: 0.5;
+    
+}
+.post-card .post-tags {
+    color: var(--black);
+    font-size: 0.8rem;
+    font-weight: bold;
+    border:2px solid var(--white);
+    border-radius:25px;
+    width:4rem;
+    background: var(--darklight);
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align: center;
+    
+   
+    
+}
+.post-card .Readmore a{
+    color: var(--darklight);
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.ArticleSnip{
+    /* text-align: left;
+    justify-content: left; */
+    display: flex;
+    
+}
+.ArticleSnip p{
+    text-align: left;
+    margin-top: 10px;
+}
+
+ /* /**************Responsive***************  */
+ @media screen and (max-width:1100px){
+    .post-card{
+        width: 90%;
+      
+    }
+  
+ }

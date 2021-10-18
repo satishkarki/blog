@@ -56,6 +56,7 @@ const getPosts=async()=>{
                     title:metadata.title ? metadata.title : "No Title Given",
                     author:metadata.author ? metadata.author : "No Author Given",
                     date:metadata.date ? metadata.date : "No Date Given",
+                    tags:metadata.tags ? metadata.tags : "No Tag Given",
                     content:content ? content : "No Content Given"
                 }
                 postlist.push(post)

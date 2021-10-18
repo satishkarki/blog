@@ -145,3 +145,19 @@
     opacity: 0.5;
     padding-top: 10px;  
 }
+ /* /**************Responsive***************  */
+ @media screen and (max-width:380px){
+    .about{
+      
+        margin-top: 25vh;
+    }
+    .CardNav .CardButton{
+        cursor:pointer;
+        width: 15vh;
+        height:5vh;
+        margin:0 10px;
+    
+    }
+        
+    }
+ 

@@ -128,3 +128,13 @@ p{
     background: var(--darklight);
     color:var(--black);
 }
+
+ /* /**************Responsive***************  */
+ @media screen and (max-width:380px){
+    .banner .content{
+        /* top:10vh; */
+        margin-top: 30vh;
+       
+        
+    }
+ }
