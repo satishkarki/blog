@@ -6,6 +6,9 @@ import remarkGfm from 'remark-gfm';
 import "../style/SinglePost.css";
 import Footer from "./Footer";
 
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import {dark} from 'react-syntax-highlighter/dist/esm/styles/prism'
+
 
 const SinglePost=(props)=>{
     // console.log(postlist)
@@ -43,7 +46,26 @@ const SinglePost=(props)=>{
                 <hr/>  
             </div>
             <div className="SinglePostContent">
-                <ReactMarkdown children={fetchedPost.content} remarkPlugins={[remarkGfm]}  />
+                <ReactMarkdown children={fetchedPost.content} remarkPlugins={[remarkGfm]}
+                components={{
+                code({node,inline,className,children, ...props}){
+                    const match =/language-(\w+)/.exec(className || '')
+                    return !inline && match? (
+                        <SyntaxHighlighter
+                            children={String(children).replace(/\n$/, '')}
+                            style={dark}
+                            language={match[1]}
+                            PreTag="div"
+                            {...props}
+                        />
+                    ):(
+                        <code className={className}{...props}>
+                            {children}
+                        </code>
+                    )
+                }
+                }}
+                  />
             </div>
         </div>
         <Footer/>    
