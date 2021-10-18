@@ -4,6 +4,7 @@ import postlist from "../MarkdownJson/posts.json";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm';
 import "../style/SinglePost.css";
+import Footer from "./Footer";
 
 
 const SinglePost=(props)=>{
@@ -22,6 +23,7 @@ const SinglePost=(props)=>{
             fetchedPost.author=post.author? post.author:"No Author"
             fetchedPost.date=post.date? post.date:"No Date"
             fetchedPost.content=post.content? post.content:"No Content"
+            fetchedPost.tags=post.tags? post.tags:"No Tags"
             postExists=true
         }
     })
@@ -31,13 +33,23 @@ const SinglePost=(props)=>{
         return <Redirect to="/404"/>
     }
     return(
-        <div className="singlePost">
-            <h2>{fetchedPost.title}</h2>
-            <h3>{fetchedPost.author}</h3>
-            <h3>{fetchedPost.date}</h3>
-            <hr/>
-            <ReactMarkdown children={fetchedPost.content} remarkPlugins={[remarkGfm]} skipHtml={false} />
+        <section className="SinglePage">
+        <div className="SinglePageContainer">
+            <div className="SinglePostTitle">
+                <h1>{fetchedPost.title}</h1>
+                <h2>{fetchedPost.author}</h2>
+                <h3>{fetchedPost.date}</h3>
+                <h4>{fetchedPost.tags}</h4>
+                <hr/>  
+            </div>
+            <div className="SinglePostContent">
+                <ReactMarkdown children={fetchedPost.content} remarkPlugins={[remarkGfm]}  />
+            </div>
         </div>
+        <Footer/>    
+        </section>
+      
     )
 }
 export default SinglePost;
+// skipHtml={false}

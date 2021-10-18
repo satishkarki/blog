@@ -1,3 +1,125 @@
-.singlePost{
-    color:whitesmoke
+
+:root{
+    --black: #000000;
+    --black2: #1b1919;
+    --black3: #2B2B2B;
+    --blue:#091353;
+    --white: whitesmoke;
+    --green:#346751;
+    --light:#F9CF93;
+    --darklight:#c17d11;
+    --darklight2:#E2C275;
+    --black4: #323232;
+    --shadow:#888888;
+    --test:#C56824;
+    --dark5:#303841;
+    --hover:#414141;
+}
+.SinglePage{
+    position: relative;
+    
+
+    background-color: var(--black3);
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+}
+.SinglePageContainer{
+    position: relative;
+    background:var(--black4);
+    /* border: 1px solid #fff; */
+    color: var(--white);
+    margin:10vh 30vh;
+    padding:30px;
+    /* box-shadow: 5px 5px var(--shadow); */
+    border-radius: 25px;
+
+}
+.SinglePostTitle{
+    position: relative;
+    margin-bottom: 30px;
+}
+.SinglePostTitle h1{
+    color: var(--darklight);
+    font-size: 1.5rem;
+}
+.SinglePostTitle h2{
+    color: var(--white);
+    font-size: 1rem;
+    opacity: 0.7;
+}
+.SinglePostTitle h3{
+    color: var(--white);
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+.SinglePostTitle h4{
+    color: var(--black);
+    font-size: 0.8rem;
+    font-weight: bold;
+    border:2px solid var(--white);
+    border-radius:25px;
+    width:4rem;
+    background: var(--darklight);
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.SinglePostContent p{
+ text-align: left;
+ font-size: 1rem;
+ margin-bottom: 10px;
+}
+.SinglePostContent p code{
+    background-color: var(--black2);
+    
+    
+}
+.SinglePostContent h2{
+    color: var(--darklight);
+    font-size: 1.5rem;
+   }
+.SinglePostContent h3{
+    color: var(--darklight2);
+    font-size: 1rem;
+    text-transform: capitalize;
+   }
+table{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 8px;
+    border-collapse: separate;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+table thead{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:var(--black2);
+    color:var(--white);
+    
+}
+table tbody{
+    padding:5px;
+}
+table tbody tr:nth-child(even){
+    background-color: var(--dark5);
+    
+}
+
+table tbody tr:hover{
+    background-color:var(--hover);
+}
+td{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+th{
+    
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
