@@ -2,7 +2,6 @@ import React from "react";
 import "../style/Contact.css"
 import { useState } from "react";
 import emailjs from "emailjs-com";
-require ('dotenv').config();
 export default function FormSignup() {
   const [values, setValues]=useState({
     username:"",
