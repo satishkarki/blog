@@ -29,8 +29,8 @@ export default function FormSignup() {
     if(values.username && values.email && values.message){
       setValid(true);
 /*****************Email.js********************** */
-      // emailjs.sendForm('service_j4l5uq7', 'template_v66r0xh', event.target, 'user_RrCXEDwSFjQb5uPvcrGDj')
-      emailjs.sendForm({process.env.REACT_APP_SERVICEKEY}, {process.env.REACT_APP_TEMPLATE}, event.target, {process.env.REACT_APP_TARGET})
+      emailjs.sendForm('service_j4l5uq7', 'template_v66r0xh', event.target, 'user_RrCXEDwSFjQb5uPvcrGDj')
+     
       .then((result) => {
           console.log(result.text);
       }, (error) => {
