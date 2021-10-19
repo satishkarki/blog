@@ -2,6 +2,7 @@ import React from "react";
 import "../style/Contact.css"
 import { useState } from "react";
 import emailjs from "emailjs-com";
+require ('dotenv').config();
 export default function FormSignup() {
   const [values, setValues]=useState({
     username:"",
@@ -28,7 +29,8 @@ export default function FormSignup() {
     if(values.username && values.email && values.message){
       setValid(true);
 /*****************Email.js********************** */
-      emailjs.sendForm('service_j4l5uq7', 'template_v66r0xh', event.target, 'user_RrCXEDwSFjQb5uPvcrGDj')
+      // emailjs.sendForm('service_j4l5uq7', 'template_v66r0xh', event.target, 'user_RrCXEDwSFjQb5uPvcrGDj')
+      emailjs.sendForm({process.env.REACT_APP_SERVICEKEY}, {process.env.REACT_APP_TEMPLATE}, event.target, {process.env.REACT_APP_TARGET})
       .then((result) => {
           console.log(result.text);
       }, (error) => {

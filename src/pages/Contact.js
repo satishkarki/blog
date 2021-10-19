@@ -24,7 +24,7 @@ function Contact() {
        <h2 className="subheading">Get in touch</h2>
          <p>Let's talk about your project or your feedback. Let's make something awesome together.</p>
          <p className="contactadd"><Fa.FaMapMarkerAlt/> Mississauga, ON, Canada </p>
-         <p className="contactadd"><Fa.FaEnvelope/> karking.satish@gmail.com</p>
+         <p className="contactadd"><Fa.FaEnvelope/> satishkarki52@gmail.com</p>
           <ul className=" contactmedia socialMedia">
             {SocialLink}
           </ul>
