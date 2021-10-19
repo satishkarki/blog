@@ -6,7 +6,7 @@ function Blog() {
   return (
     <section className="BlogPost">
       <div className="BlogTopTitle">
-        <h2>All Post</h2>
+        <h2>Info Retention</h2>
       </div>
       <BlogList/>
       <Footer/>

@@ -5,9 +5,10 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm';
 import "../style/SinglePost.css";
 import Footer from "./Footer";
+import * as Fa from "react-icons/fa";
 
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
-import {dark} from 'react-syntax-highlighter/dist/esm/styles/prism'
+import {darcula} from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 
 const SinglePost=(props)=>{
@@ -42,7 +43,15 @@ const SinglePost=(props)=>{
                 <h1>{fetchedPost.title}</h1>
                 <h2>{fetchedPost.author}</h2>
                 <h3>{fetchedPost.date}</h3>
-                <h4>{fetchedPost.tags}</h4>
+                <div className="PostTag">
+                    <div className="PostTaglogo">
+                        <Fa.FaTags/>
+                    </div>
+                    <div className="PostTaghead">
+                        <h4>{fetchedPost.tags}</h4>
+                    </div>
+                </div>
+                
                 <hr/>  
             </div>
             <div className="SinglePostContent">
@@ -53,7 +62,7 @@ const SinglePost=(props)=>{
                     return !inline && match? (
                         <SyntaxHighlighter
                             children={String(children).replace(/\n$/, '')}
-                            style={dark}
+                            style={darcula}
                             language={match[1]}
                             PreTag="div"
                             {...props}

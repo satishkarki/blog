@@ -8,8 +8,8 @@ A programmer's must have tool but its use is not confined to coding only. Imagin
 Git is the most commonly used version control system. It is a distributed VCS, complete codebase including its full version history is mirrored on every developer's computer. This feature helps to synchronise code between multiple people working on the same project.
 
 
-
-![Gitworkflow](Gitworkflow.png)
+## Git Work Flow
+![Gitworkflow](https://images2.imgbox.com/dd/e9/ioJZdg3E_o.png)
 
 ## Three States
 
@@ -186,7 +186,8 @@ git reset HEAD~1
 
 - Reset can be --soft, --mixed, --hard. [Learn More](https://levelup.gitconnected.com/confused-with-the-difference-between-git-reset-soft-mixed-hard-3285e8b5cd0f)
 
-![GitReset](gitreset.png)
+## Git Reset
+![GitReset](https://images2.imgbox.com/35/47/ImsNaX94_o.png)
 
 ### Add a remote origin and Push
 
@@ -286,11 +287,11 @@ API/api.html
 
 ## Collaboration
 
-![GitWorkFlow](gitworkflow.png)
+![GitWorkFlow](https://images2.imgbox.com/23/5e/c0c6DjO3_o.png)
 
 ### Branching and Merging
 
-![branch/merge](branchmerge.png)
+![branch/merge](https://images2.imgbox.com/c3/90/rJoaE2mJ_o.png)
 
 ```bash
 # Create a branch
@@ -308,7 +309,7 @@ git merge blue
 
 ### Forking and Pull Request
 
-![forking](fork.png)
+![forking](https://images2.imgbox.com/76/d6/wOPo2m5P_o.png)
 
 If you want to learn more about the Git Branching...[go to this site](https://learngitbranching.js.org/)
 

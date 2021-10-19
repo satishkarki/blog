@@ -20,7 +20,7 @@ function Footer(){
             <div className="copyright">
                 <h1 className="foot">Satish Karki © {year} </h1>
                 <p className="footp"><Fa.FaMapMarkerAlt/> Mississauga, ON, Canada </p>
-                <p className="footp">Builtwith <Fa.FaReact/> React</p>
+                <p className="footp">Built with <Fa.FaReact/> React</p>
             </div>
             <div className="footermedia">
                 <h1 className="foot">Get In Touch</h1>

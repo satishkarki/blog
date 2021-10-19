@@ -6,7 +6,7 @@ tags: Linux
 ---
 If you spend most of your time in a shell then you will probably use commands like `wget`, `dpkg` and `apt` frequently to install different packages. Everything is in the `man` page but I sometime find it very difficult to read the manpage page to be honest. So, I have listed some of  commonly used syntax in this post.  
 
-### **wget**
+## **wget**
 
 The command I am using is **wget** and the URL passed to it is the repository location of **.deb** file.
 
@@ -33,7 +33,7 @@ These were some of the basic options with wget. We can change the Wget User-Agen
 
 ---
 
-### dpkg
+## dpkg
 
 Now we have downloaded the file, we need to install the Debian package. **dpkg** is the package manger for Debian. 
 
@@ -53,7 +53,7 @@ Learn more about it [here](https://linuxhint.com/manual_install_deb_package_cli_
 
 ---
 
-### apt
+## apt
 
 We can use apt to install the Debian package as well
 
