@@ -1,6 +1,5 @@
 import "../style/Footer.css"
 import {sociallinks} from "../components/socialmedia";
-import { Link } from "react-router-dom";
 import * as Fa from "react-icons/fa";
 function Footer(){
     let d= new Date();
@@ -10,9 +9,9 @@ function Footer(){
     const SocialLink=sociallinks.map((sociallink)=>
         
     <li key={sociallink.id}>
-      <Link to={sociallink.path} >
-          {sociallink.icon}
-      </Link>
+       <a href={sociallink.path} target="_blank" rel="noreferrer" >
+            {sociallink.icon}
+        </a>
       </li>
   );
     return(

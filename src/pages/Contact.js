@@ -3,16 +3,15 @@ import FormSignup from "../components/FormSignup"
 import "../style/Contact.css"
 import * as Fa from "react-icons/fa";
 import {sociallinks} from "../components/socialmedia";
-import { Link } from "react-router-dom";
 import Footer  from "../components/Footer";
 
 function Contact() {
   const SocialLink=sociallinks.map((sociallink)=>
         
   <li key={sociallink.id}>
-    <Link to={sociallink.path} >
-        {sociallink.icon}
-    </Link>
+     <a href={sociallink.path} target="_blank" rel="noreferrer">
+            {sociallink.icon}
+      </a>
     </li>
 );
   return (

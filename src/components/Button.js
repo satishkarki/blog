@@ -1,16 +1,16 @@
 import React from "react";
-var cv=require('../components/CV/Resume.pdf');
-
 function CVDownload(){
-
-    return(
-        <button className="btn"
-            type="btn"
-            onClick={(e)=>{
-                e.preventDefault();
-                window.location.href={cv}
-            }}
-        > Download My CV</button>    
-    );
+  const pdfview = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  }
+  return(
+      <button className="btn"
+          type="btn"
+          onClick={() => pdfview('https://drive.google.com/file/d/17ll0j0j9QN-RYMFyfeKZkOd1bmeae98b/view?usp=sharing')}
+      > Download My CV</button>    
+  );
 }
+
+
 export default CVDownload;
