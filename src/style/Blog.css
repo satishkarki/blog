@@ -19,6 +19,7 @@
     width: 100%;
     /* padding:20px 20px; */
     justify-content: center;
+    overflow-x: hidden;
 }
 .BlogPost .BlogTopTitle{
     color: var(--white);

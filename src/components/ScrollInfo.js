@@ -9,7 +9,7 @@ function ScrollInfo() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["...Caffeinated", "...Curious", "...Persistence","...Motivated"], 
+      strings: ["...Motivated &", "...Caffienated"], 
       startDelay: 3000,
       typeSpeed: 100,
       backSpeed: 100,

@@ -20,6 +20,7 @@
   justify-content: center;
   justify-items: center;
   align-items: center;
+  overflow-x: hidden;
 }
 .contact .title{
   justify-content: center;
