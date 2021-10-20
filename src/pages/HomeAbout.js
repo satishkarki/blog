@@ -8,7 +8,7 @@ import {
 } from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-blue.css';
 function HomeAbout() {
-  const [activeCard, setactiveCard]=useState("SecondCard")
+  const [activeCard, setactiveCard]=useState("FirstCard")
 
   return (
    <section className="about">

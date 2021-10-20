@@ -1,7 +1,7 @@
 ---
 title: Git to Know
 author: Satish Karki
-date: October 1, 2021
+date: October 7, 2021
 tags: Git
 ---
 A programmer's must have tool but its use is not confined to coding only. Imagine changing the `config` file of an application and you messed it up completely. Worry no more, you can revert to the original configuration, with one liner if you know how git works.
