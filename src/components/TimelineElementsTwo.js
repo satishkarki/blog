@@ -64,13 +64,13 @@ export const SkillLinks=[
             },
             {
                 skillid:12,
-                skillname:"VMware",
+                skillname:"VMWare ESXi 7.0.3, vSphere Client ",
                 // skillname:"Vmware-RDP, VPN, AD DS, AWS Cloud Foundation",
                 skillicon:<SiVmware/>
             },
             {
                 skillid:13,
-                skillname:"Office365",
+                skillname:"Microsoft Intune, Endpoint Management, JamF Pro",
                 // skillname:"Office365:Word, Excel, PowerPoint, SharePoint, Outlook, Teams",
                 skillicon:<SiMicrosoftoffice/>
 

@@ -17,16 +17,16 @@ function HomeAbout() {
     </div>
     <nav className="CardNav">
           
-            <AwesomeButton className="CardButton" type="primary" onPress={()=>setactiveCard("FirstCard")}>Education</AwesomeButton>
-            <AwesomeButton className="CardButton" type="primary" onPress={()=>setactiveCard("SecondCard")}>Skills</AwesomeButton>
-            <AwesomeButton className="CardButton" type="primary" onPress={()=>setactiveCard("ThirdCard")}>Experience</AwesomeButton>
+            <AwesomeButton className="CardButton" type="primary" onPress={()=>setactiveCard("FirstCard")}>Experience</AwesomeButton>
+            <AwesomeButton className="CardButton" type="primary" onPress={()=>setactiveCard("SecondCard")}>Education</AwesomeButton>
+            <AwesomeButton className="CardButton" type="primary" onPress={()=>setactiveCard("ThirdCard")}>Skills</AwesomeButton>
             
         
     </nav>
     <div> 
-      {activeCard === "FirstCard" && <ThreeCards title={<Education/>}  />}
-      {activeCard === "SecondCard" && <ThreeCards title={<Skills/>}/>}
-      {activeCard === "ThirdCard" && <ThreeCards title={<Experience/>}/>}
+      {activeCard === "FirstCard" && <ThreeCards title={<Experience/>}  />}
+      {activeCard === "SecondCard" && <ThreeCards title={<Education/>}/>}
+      {activeCard === "ThirdCard" && <ThreeCards title={<Skills/>}/>}
 
     </div>
    

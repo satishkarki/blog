@@ -9,7 +9,7 @@ function ScrollInfo() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["...Motivated &", "...Caffienated"], 
+      strings: ["...Determination &", "...an unhealthy amount of coffee!"], 
       startDelay: 3000,
       typeSpeed: 100,
       backSpeed: 100,
@@ -28,7 +28,7 @@ function ScrollInfo() {
 
   return (
     <div className="Tag-line">
-      <h1>Hi there! I am...</h1>
+      <h1>Hi there! I am fuled by...</h1>
       {/* Element to display typing strings */}
       <span  className="typed-word" ref={el}></span>
     </div>
